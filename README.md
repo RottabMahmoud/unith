@@ -2,30 +2,23 @@
 
 ## What the Application does
 
-- A fully responsive 3D animated portfolio built using React, JavaScript, Tailwind CSS, Framer Motion, React Three Fiber, and Three.js.
+- A fully responsive React SPA, that renders 10 card list in each page, paginated, with a detailed page for each Item with a go home button.
 
 ## Technologies
 
-- JavaScript
+- TypeScript
 - React
 - Tailwind CSS
-- Framer Motion
-- React Three Fiber
-- React Tilt
-- React Vertical Timeline
-- Three.js
-
-## Some of the challenges I've faced and how I've tackled them
-
-- Applying Animations, used animation libraries like React Three Fiber, Framer motion, and Reacht Tilt for applying animations.
-- Adding 3D Objects, used 3d objects library, to import and start using 3d objects in my UI.
+- Redux
+- Docker
+- Axios
 
 ## Project Installation
 
 ```bash
-git clone https://github.com/RottabMahmoud/3D_portfolio
-cd 3d_portfolio
-npm install --legacy-peer-deps 
+git clone https://github.com/RottabMahmoud/unith.git
+cd unith
+npm install  
 ```
 
 ## To Start the App
@@ -41,48 +34,40 @@ npm run build
 ```
 ## Usage
 
-Used TailwindCSS for stylings, React Tilt, React Vertical Timeline, and React Framer Motion for animations.
-Used React Three Fiber for 3d Objects.
+Used TailwindCSS for stylings, & axios for API calls.
 
 ```bash
-npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
+npm install redux react-redux @reduxjs/toolkit react-router-dom axios tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 ```
 
 ## Project Hierarchy
 ```bash
-  3D_PORTFOLIO    
+  UNITH    
     ├─ public
-    │  ├─ desktip_pc ## 3D Object
-    │  ├─ planet     ## 3D Object
-    │  ├─ logo.svg
+    │  ├─ vite.svg
     ├─ src                   
     │  ├─ App.jsx            
     │  ├─ components         
-    │  │  ├─ About.jsx      
-    │  │  ├─ Contact.jsx
-    │  │  ├─ Education.jsx
-    │  │  ├─ Experience.jsx
-    │  │  ├─ Hero.jsx      
-    │  │  ├─ index.jsx  
-    │  │  ├─ Loader.jsx       
-    │  │  ├─ NavBar.jsx       
-    │  │  ├─ Tech.jsx       
-    │  │  ├─ Works.jsx       
-    │  ├─ hoc              
-    │  │  ├─ index.js 
-    │  │  └─ SectionWrapper.jsx
-    │  ├─ logos       ## Logos Folder        
-    │  ├─ utils             
-    │  │  └─ motion.js                
-    │  │─ index.css
-    │  │─ main.jsx
-    │  │─ styles.js
+    │  │  ├─ ImageDetail.tsx      
+    │  │  ├─ ImageList.tsx
+    │  ├─ store              
+    │  │  ├─ imageSlice.ts 
+    │  │  └─ index.ts
+    │  ├─ App.css        
+    │  ├─ App.tsx             
+    │  ├─ index.css             
+    │  ├─ main.tsx             
+    │  ├─ vite.env.d.ts             
     ├─ .gitignore 
+    ├─ .dockerignore 
+    ├─ Dockerfile 
     ├─ node_modules
     ├─ index.html
     ├─ package.json
     ├─ package-lock.json
-    ├─ postcss.config.cjs
+    ├─ postcss.config.js
+    ├─ tsconfig.json
     ├─ tailwind.config.cjs
     ├─ vite.config.cjs
     ├─ README.md
