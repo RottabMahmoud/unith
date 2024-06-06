@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 const fallbackImage = '/src/assets/react.svg';
 const itemsPerPage = 10;
-const itemsPerRow = 5;
 
 const ImageList: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
